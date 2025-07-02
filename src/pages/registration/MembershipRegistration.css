@@ -1,0 +1,87 @@
+/* MembershipRegistration.css */
+
+body {
+    background-color: #fff0f5;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .membership-form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #ffc0cb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease;
+  }
+  
+  .form-title {
+    color: #800080;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input.form-control,
+  select.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input.form-control:focus,
+  select.form-control:focus {
+    border-color: #c770c7;
+    box-shadow: 0 0 5px rgba(199, 112, 199, 0.5);
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #800080;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5e005e;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .membership-form {
+      padding: 1.5rem;
+    }
+  
+    .form-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

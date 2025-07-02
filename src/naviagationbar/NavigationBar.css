@@ -1,0 +1,111 @@
+/* ===== Top bar ===== */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(3, 20, 27);
+  /* background-color: #1b76d157; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+  z-index: 2000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.top-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+/* ===== Menu toggle (hamburger icon) ===== */
+.menu-toggle {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ===== Sidebar ===== */
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(3, 20, 27);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1500;
+  padding-top: 70px;
+}
+
+.sidebar-nav.open {
+  transform: translateX(0);
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  padding: 15px 20px;
+}
+
+.sidebar-nav .a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.sidebar-nav .a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* ===== Overlay ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1400;
+}
+
+/* ===== Responsive adjustments ===== */
+@media screen and (min-width: 768px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,104 @@
+/* Base layout for large screens */
+
+  /* Hero content area */
+  .home-content {
+    background: rgba(54, 51, 51, 0.671) url('https://2008remodel.wordpress.com/wp-content/uploads/2011/03/ht_at_night1.jpg') no-repeat center;
+    background-size: cover;
+    /* padding: 100px 20px; */
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+  }
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .home-content h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  
+  /* Card layout */
+  .home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Link inside Button */
+  .Link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* ========================= */
+  /* ==== RESPONSIVENESS ==== */
+  /* ========================= */
+  
+  @media (max-width: 992px) {
+    .home {
+      margin-left: 0;
+      /* padding: 1rem; */
+    }
+  
+    .home-content {
+      padding: 60px 15px;
+    }
+  
+    .home-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .home-content h4 {
+      font-size: 1.1rem;
+    }
+  
+    .home-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-content {
+      padding: 40px 10px;
+    }
+  
+    .home-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .home-content h4 {
+      font-size: 1rem;
+    }
+  
+    .card-img img {
+      height: 160px;
+    }
+  
+    .home-cards {
+      padding: 0;
+      gap: 1.5rem;
+    }
+  }
+  

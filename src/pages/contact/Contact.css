@@ -1,0 +1,169 @@
+/* Contact.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+  }
+  
+  .contact-page {
+    padding: 2rem;
+    background: linear-gradient(to right, #fce1f1, #f9dfff);
+    min-height: 100vh;
+    margin-top: 40px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-header p {
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    animation: fadeInLeft 1s ease-in;
+  }
+  
+  .contact-form h3 {
+    color: #800080;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #ff69b4;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #800080;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #5e005e;
+  }
+  
+  /* Parish Info */
+  .parish-info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    animation: fadeInRight 1s ease-in;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .parish-info h3 {
+    color: #800080;
+    margin-bottom: 1rem;
+  }
+  
+  .parish-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInTop {
+    0% {
+      transform: translateY(-500px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(30px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bounce-in-top {
+    animation: bounceInTop 1.2s ease-in-out;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+    }
+  
+    .contact-header h1 {
+      font-size: 1.7rem;
+    }
+  
+    .contact-header p {
+      font-size: 1rem;
+    }
+  }

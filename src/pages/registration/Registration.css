@@ -1,0 +1,86 @@
+/* === CONTAINER === */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f4f8, #dbe7f1);
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* === CARD === */
+.registration-content {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* === TEXT === */
+.registration-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002147;
+  margin-bottom: 20px;
+}
+
+.registration-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* === BUTTONS === */
+.registration-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fill-btn {
+  background: #3266cc;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.fill-btn:hover {
+  background: #003d99;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .registration-content {
+    padding: 30px 20px;
+  }
+
+  .registration-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .registration-content p {
+    font-size: 0.95rem;
+  }
+
+  .fill-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .registration-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
