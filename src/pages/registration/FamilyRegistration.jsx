@@ -63,7 +63,7 @@ const FamilyRegistration = () => {
         }))
       };
 
-      const res = await axios.post('https://qmhr-backend-2.onrender.com/api/families/register', payload);
+      const res = await axios.post('https://qmhr-backend.onrender.com/api/families/register', payload);
       alert('🎉 Family registered successfully!');
       console.log(res.data);
 

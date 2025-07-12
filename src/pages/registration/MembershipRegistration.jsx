@@ -37,7 +37,7 @@ const MembershipRegistration = () => {
         haveConfirmed: formData.haveConfirmed === "Yes",
       };
   
-      const res = await axios.post('https://qmhr-backend-2.onrender.com/api/memberships/register', dataToSend);
+      const res = await axios.post('https://qmhr-backend.onrender.com/api/memberships/register', dataToSend);
       alert('🎉 Registration Successful!');
       console.log(res.data);
   
