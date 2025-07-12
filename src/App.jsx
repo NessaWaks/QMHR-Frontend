@@ -10,6 +10,11 @@ import Contact from './pages/contact/Contact'
 import FamilyRegistration from './pages/registration/FamilyRegistration'
 import MembershipRegistration from './pages/registration/MembershipRegistration'
 import LogIn from './pages/logIn/LogIn'
+import AdminDashboard from './pages/admin/AdminDashboard'
+import AdminRoute from './pages/admin/AdminRoute'
+// import ForgotPassword from './pages/forgotPassword/ForgotPassword'
+// import VerifyOTP from './pages/verifyOTP/VerifyOTP'
+
 
 const App = () => {
   return (
@@ -17,14 +22,22 @@ const App = () => {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile/>} />
-        <Route path="/registration" element={<Registration/>} />
-        <Route path="/announcement" element={<Announcement/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/logIn" element={<LogIn/>} />
-        <Route path="/familyregistration" element={<FamilyRegistration/>} />
-        <Route path="/membershipregistration" element={<MembershipRegistration/>} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/announcement" element={<Announcement />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/logIn" element={<LogIn />} />
+        <Route path="/familyregistration" element={<FamilyRegistration />} />
+        <Route path="/membershipregistration" element={<MembershipRegistration />} />
+        <Route path="/admindashboard" element={<AdminDashboard />} />
+        <Route path="/admin" element={
+        <AdminRoute>
+          <AdminDashboard />
+        </AdminRoute>
+      } />
       </Routes>
+      
+
     </div>
   )
 }

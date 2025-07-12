@@ -1,0 +1,136 @@
+.admin-dashboard {
+    padding: 2rem;
+    background-color: #f9f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  .admin-dashboard h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeSlide 0.5s ease;
+  }
+  
+  .section h2 {
+    margin-bottom: 1rem;
+    color: #222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem;
+    border: 1px solid #eee;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  
+  .admin-table th {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .admin-table td {
+    background-color: #fff;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-form {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    animation: slideDown 0.3s ease;
+  }
+  
+  .edit-form input,
+  .edit-form select {
+    margin-bottom: 0.75rem;
+    padding: 0.6rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .edit-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+  
+    to {
+      max-height: 1000px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -52,7 +52,7 @@ const Home = () => {
                             <Card.Title>Registration</Card.Title>
                             <Card.Text>
                                 Register Now
-                                Join our parish and become part of our growing Catholic family. Whether you're new or returning, we’d love to have you.
+                                Join our parish and become part of our growing Catholic family. Whether you're new , we’d love to have you.
                             </Card.Text>
                             <Button variant="primary"><Link className = 'Link' to = '/registration' as ={Link}>Register</Link></Button>
                         </Card.Body>

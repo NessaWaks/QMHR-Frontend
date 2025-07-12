@@ -126,6 +126,39 @@ body, html {
   color: #ccc;
   margin-top: 20px;
 }
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 40px; /* reserve space for eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon .icon {
+  width: 22px;
+  height: 22px;
+  stroke: #fff;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.eye-icon:hover .icon {
+  opacity: 1;
+}
+
 
 /* Responsive */
 @media (max-width: 500px) {

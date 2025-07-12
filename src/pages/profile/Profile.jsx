@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Profile.css';
 
 const Profile = () => {
-  const user = {
-    name: 'John Doe',
-    role: 'Adult Catholic Member',
-    email: 'johndoe@example.com',
-    phone: '(123) 456-7890',
-    address: 'Queen of the most holy rosary Parish, Lagos, Nigeria',
-    baptismDate: 'March 20, 2010',
-    confirmationName: 'Anthony',
-    communionDate: 'June 15, 2012',
-    registeredGroup: 'Sacred Heart of Jesus',
-    familySize: 0,
-  };
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      setUser(JSON.parse(userData));
+    }
+  }, []);
+
+  if (!user) return <div>Loading profile...</div>;
 
   return (
     <div className="profile-container">
@@ -24,8 +22,8 @@ const Profile = () => {
             alt="Profile"
             className="profile-pic"
           />
-          <h2>{user.name}</h2>
-          <p>{user.role}</p>
+          <h2>{user.name || user.fullName}</h2>
+          <p>{user.role || 'Catholic Member'}</p>
           <p>{user.address}</p>
           <div className="button-group">
             <button className="btn-message">Message</button>
@@ -36,14 +34,14 @@ const Profile = () => {
         <div className="right-section">
           <h3>Basic Information</h3>
           <p><strong>Email:</strong> {user.email}</p>
-          <p><strong>Phone:</strong> {user.phone}</p>
+          <p><strong>Phone:</strong> {user.phone || user.phoneNumber}</p>
 
           <h3>Church Details</h3>
-          <p><strong>Baptism Date:</strong> {user.baptismDate}</p>
-          <p><strong>Confirmation Name:</strong> {user.confirmationName}</p>
-          <p><strong>First Communion:</strong> {user.communionDate}</p>
-          <p><strong>Registered Group:</strong> {user.registeredGroup}</p>
-          <p><strong>Family Size:</strong> {user.familySize}</p>
+          <p><strong>Baptism:</strong> {user.baptismDate || (user.haveBaptism ? 'Yes' : 'No')}</p>
+          <p><strong>Confirmation:</strong> {user.haveConfirmed ? 'Yes' : 'No'}</p>
+          <p><strong>First Communion:</strong> {user.haveReceivedCommunion ? 'Yes' : 'No'}</p>
+          <p><strong>Registered Group:</strong> {user.registeredGroup || user.societyGroup}</p>
+          <p><strong>Family Size:</strong> {user.familyMembers?.length || 0}</p>
         </div>
       </div>
     </div>
