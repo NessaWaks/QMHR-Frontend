@@ -16,7 +16,7 @@ const Contact = () => {
     setStatus('Sending...');
 
     try {
-      await axios.post('https://qmhr-backend.onrender.com/api/contact', form);
+      await axios.post('https://qmhr-backend-2.onrender.com/api/contact', form);
       setStatus('Message sent successfully!');
       setForm({ name: '', email: '', message: '' });
     } catch (err) {

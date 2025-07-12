@@ -28,7 +28,7 @@ const LogIn = () => {
       return;
     }
     try {
-      await axios.post('https://qmhr-backend.onrender.com/api/auth/signup', {
+      await axios.post('https://qmhr-backend-2.onrender.com/api/auth/signup', {
         email: formData.email,
         password: formData.password
       });
@@ -42,7 +42,7 @@ const LogIn = () => {
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://qmhr-backend.onrender.com/api/auth/verify-otp', {
+      await axios.post('https://qmhr-backend-2.onrender.com/api/auth/verify-otp', {
         email: formData.email,
         otp: formData.otp
       });
@@ -57,7 +57,7 @@ const LogIn = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://qmhr-backend.onrender.com/api/auth/login', {
+      const res = await axios.post('https://qmhr-backend-2.onrender.com/api/auth/login', {
         email: formData.email,
         password: formData.password
       });
@@ -81,7 +81,7 @@ const LogIn = () => {
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://qmhr-backend.onrender.com/api/auth/forgot-password', {
+      await axios.post('https://qmhr-backend-2.onrender.com/api/auth/forgot-password', {
         email: formData.email
       });
       alert('OTP sent to email.');

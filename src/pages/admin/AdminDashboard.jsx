@@ -16,8 +16,8 @@ const AdminDashboard = () => {
 
   const fetchAllData = async () => {
     try {
-      const memberRes = await axios.get('https://qmhr-backend.onrender.com/api/memberships');
-      const familyRes = await axios.get('https://qmhr-backend.onrender.com/api/families');
+      const memberRes = await axios.get('https://qmhr-backend-2.onrender.com/api/memberships');
+      const familyRes = await axios.get('https://qmhr-backend-2.onrender.com/api/families');
       setMembers(memberRes.data);
       setFamilies(familyRes.data);
     } catch (err) {
@@ -38,8 +38,8 @@ const AdminDashboard = () => {
   const handleUpdate = async (type) => {
     try {
       const url = type === 'member'
-        ? `https://qmhr-backend.onrender.com/api/memberships/${editMemberId}`
-        : `https://qmhr-backend.onrender.com/api/families/${editFamilyId}`;
+        ? `https://qmhr-backend-2.onrender.com/api/memberships/${editMemberId}`
+        : `https://qmhr-backend-2.onrender.com/api/families/${editFamilyId}`;
       await axios.put(url, editForm);
       alert('Updated successfully');
       setEditMemberId(null);
@@ -53,8 +53,8 @@ const AdminDashboard = () => {
   const handleDelete = async (id, type) => {
     try {
       const url = type === 'member'
-        ? `https://qmhr-backend.onrender.com/api/memberships/${id}`
-        : `https://qmhr-backend.onrender.com/api/families/${id}`;
+        ? `https://qmhr-backend-2.onrender.com/api/memberships/${id}`
+        : `https://qmhr-backend-2.onrender.com/api/families/${id}`;
       await axios.delete(url);
       alert('Deleted successfully');
       fetchAllData();
