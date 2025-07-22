@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NavigationBar.css';
-import logo from '../assets/images/qmhr-logo.png';
+import logo from '../assets/images/qmhr-logo.png'; 
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
