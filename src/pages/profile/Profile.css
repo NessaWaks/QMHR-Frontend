@@ -1,4 +1,4 @@
-* {
+/* /* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 .profile-container {
   min-height: 100vh;
   /* padding: 60px 20px; */
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(-45deg, #ffecd2, #fcb69f, #a18cd1, #fbc2eb);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
@@ -35,7 +35,7 @@
 }
 
 /* LEFT SECTION */
-.left-section {
+/* .left-section {
   background: #e0f7fa;
   padding: 30px 20px;
   flex: 1 1 300px;
@@ -100,7 +100,7 @@
 }
 
 /* RIGHT SECTION */
-.right-section {
+/* .right-section {
   padding: 30px 20px;
   flex: 2 1 500px;
 }
@@ -117,10 +117,10 @@
   margin: 10px 0;
   color: #333;
   font-size: 0.95rem;
-}
+} */ 
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .profile-card {
     flex-direction: column;
     border-radius: 15px;
@@ -134,4 +134,4 @@
   .right-section {
     text-align: left;
   }
-}
+} */  

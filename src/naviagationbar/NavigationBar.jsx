@@ -25,11 +25,11 @@ const NavigationBar = () => {
       <div className={`sidebar-nav ${isOpen ? 'open' : ''}`}>
         <ul>
           <li><Link className="a" to="/" onClick={closeMenu}>Home</Link></li>
-          <li><Link className="a" to="/profile" onClick={closeMenu}>Profile</Link></li>
+          {/* <li><Link className="a" to="/profile" onClick={closeMenu}>Profile</Link></li> */}
           <li><Link className="a" to="/registration" onClick={closeMenu}>Registration</Link></li>
-          <li><Link className="a" to="/announcement" onClick={closeMenu}>Announcement</Link></li>
+          {/* <li><Link className="a" to="/announcement" onClick={closeMenu}>Announcement</Link></li> */}
           <li><Link className="a" to="/contact" onClick={closeMenu}>Contact</Link></li>
-          <li><Link className="a" to="/logIn" onClick={closeMenu}>LogIn</Link></li>
+          {/* <li><Link className="a" to="/logIn" onClick={closeMenu}>LogIn</Link></li> */}
         </ul>
       </div>
 

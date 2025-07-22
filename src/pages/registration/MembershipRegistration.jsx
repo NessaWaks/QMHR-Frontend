@@ -104,10 +104,10 @@ const MembershipRegistration = () => {
         </div>
 
         {/* Password */}
-        <div className="col-md-12">
+        {/* <div className="col-md-12">
           <label>Create Password</label>
           <input type="password" name="password" className="form-control" value={formData.password} onChange={handleChange} required />
-        </div>
+        </div> */}
 
         {/* Sacraments */}
         <div className="col-md-4">

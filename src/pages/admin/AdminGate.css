@@ -1,0 +1,63 @@
+.admin-gate {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1c1e26, #2a2d3e);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .admin-gate-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .admin-gate-box h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .admin-gate-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  
+  .admin-gate-box input::placeholder {
+    color: #ccc;
+  }
+  
+  .admin-gate-box button {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-gate-box button:hover {
+    background: linear-gradient(135deg, #00cec9, #00b894);
+  }
+  
