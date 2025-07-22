@@ -95,10 +95,10 @@ const FamilyRegistration = () => {
           <label>Email</label>
           <input type="email" className="form-control" name="email" value={headInfo.email} onChange={handleHeadChange} required />
         </div>
-        {/* <div className="col-md-6">
+        <div className="col-md-6">
           <label>Password</label>
           <input type="password" className="form-control" name="password" value={headInfo.password} onChange={handleHeadChange} required />
-        </div> */}
+         </div>
         <div className="col-md-12">
           <label>Address</label>
           <input type="text" className="form-control" name="address" value={headInfo.address} onChange={handleHeadChange} required />
